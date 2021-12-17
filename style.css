@@ -1,0 +1,153 @@
+@font-face{
+	font-family: fon1;
+	src: url("fonts/fon1.otf");
+}
+@font-face{
+	font-family: fon2;
+	src: url("fonts/fon2.ttf");
+}
+@font-face{
+	font-family: fon3;
+	src: url("fonts/fon3.otf");
+}
+@font-face{
+	font-family: fon4;
+	src: url("fonts/fon4.otf");
+}
+body{
+	margin: 0;
+}
+a{
+	text-decoration-line: none;
+}
+#header{
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #f9d9fa;
+	text-align: center;
+	z-index: 100;
+	
+}
+#header .btn{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+	padding: 10px;
+	height: 30px;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #000;
+	font-family: fon2;
+	transition-duration: 200ms;
+}
+
+#header .btn:hover{
+	color: #5c5656;
+	text-shadow: 0 0 7px #807a7a;
+}
+#header .btn .arr{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 20px;
+	width: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#header .btn .arr::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: calc(50% - 1px);
+	left: 0;
+	background-color: #fff ;
+	height: 2px;
+	width: 10px;
+	transform: rotate(-45deg);	
+	transition-duration: 200ms;
+}
+#header .btn:hover .arr::before{
+	transform: rotate(45deg);
+}
+#header .btn .arr::after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: calc(50% - 1px);
+	right: 0;
+	background-color: #fff ;
+	height: 2px;
+	width: 10px;
+	transform: rotate(45deg);
+	transition-duration: 200ms;
+}
+#header .btn:hover .arr::after{
+	transform: rotate(-45deg);
+}
+#header .btn .menu{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 10px;
+	transform: translateY(-50%) scaleY(0);
+	transition-duration: 200ms;
+}
+#header .btn:hover .menu{
+	transform: translateY(0) scaleY(1);
+}
+#header .btn .menu-btn{
+	height: 20px;
+	font-size: 20px;
+	line-height: 20px;
+	color: #aaa;
+	text-transform: none;
+}
+#header .logo{
+	padding: 0;
+	height: 50px;
+}
+#header .logo img{
+	height: 100%;
+}
+#header .btn1{
+
+}
+#header .btn2{
+
+}
+
+#content{
+	background-color: #fcf0fc;
+	min-height: 100vh;
+}
+#footer{
+	text-align: center;
+	padding: 50px;
+	background-color: #f9d9fa;
+}
+#footer span{
+	margin: 10px;
+	color: #000;
+}
+#footer span a{
+	color: black;
+	text-decoration: none;
+}
+#footer .span a:hover{
+	text-decoration: underline;
+}
+#block1{
+
+}
+#block1 .video{
+	width: 100%;
+}
+
+.block{
+
+}
